@@ -260,3 +260,56 @@ body {
     padding-right: 30px;
     color: #ffffff;
 }
+
+
+
+.card-td-two-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card-td-two-lamp {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    background: #1ABD01;
+    border: #ffffff solid 2px;
+    box-shadow: inset -0.3625rem -0.3625rem 0.3625rem 0.3625rem rgba(0, 0, 0, 0.2);
+}
+
+.card-td-btn-access {
+    width: 100px;
+    height: 40px;
+    background: #1ABD01;
+    box-shadow: inset -0.0625rem -0.0625rem 0.0625rem 0.0625rem #ffffff, inset 0.0625rem 0.0625rem 0.25rem 0.0625rem #666666;
+    display: flex;
+    align-items: center;
+    color: #2943B9;
+    justify-content: center;
+}
+.card-td-btn-wrong{
+    width: 100px;
+    height: 40px;
+    background: #bd2703;
+    box-shadow: inset -0.0625rem -0.0625rem 0.0625rem 0.0625rem #ffffff, inset 0.0625rem 0.0625rem 0.25rem 0.0625rem #666666;
+    display: flex;
+    align-items: center;
+    color: #2943B9;
+    justify-content: center;
+}
+.reset-btn-group{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reset-btn{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #ECF2FD;
+}

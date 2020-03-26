@@ -13,11 +13,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="403">
+              <caret line="310" column="51" selection-start-line="310" selection-start-column="51" selection-end-line="310" selection-end-column="51" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -25,17 +28,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main-rem.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5610">
-              <caret line="170" column="27" lean-forward="true" selection-start-line="170" selection-start-column="27" selection-end-line="170" selection-end-column="27" />
+            <state relative-caret-position="610">
+              <caret line="357" selection-start-line="357" selection-end-line="357" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8085">
-              <caret line="245" column="24" lean-forward="true" selection-start-line="245" selection-start-column="24" selection-end-line="245" selection-end-column="24" />
+            <state relative-caret-position="808">
+              <caret line="315" selection-start-line="315" selection-end-line="315" />
             </state>
           </provider>
         </entry>
@@ -60,25 +63,32 @@
       <find>60</find>
       <find>style=&quot;line-height: 40px&quot;</find>
       <find>card-td-l</find>
+      <find>TdMonitoring</find>
+      <find>blue</find>
+      <find>card-title</find>
+      <find>state-box</find>
+      <find>active</find>
+      <find>card-td-two-btn</find>
     </findStrings>
     <replaceStrings>
       <replace>0000</replace>
       <replace>border: #000000 solid 1px;</replace>
       <replace>40</replace>
+      <replace>card-td-btn-access</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main.css" />
-        <option value="$PROJECT_DIR$/main-rem.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/main-rem.css" />
+        <option value="$PROJECT_DIR$/main.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="35" />
-    <option name="y" value="178" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="13" />
+    <option name="y" value="8" />
     <option name="width" value="1776" />
     <option name="height" value="1040" />
   </component>
@@ -87,17 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="TD-3500" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TD-3500" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -141,17 +141,18 @@
       <workItem from="1585015698528" duration="11224000" />
       <workItem from="1585032248671" duration="1719000" />
       <workItem from="1585099403625" duration="412000" />
+      <workItem from="1585199652698" duration="4901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13954000" />
+    <option name="totallyTimeSpent" value="18855000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="178" width="1776" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15880322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15858799" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -176,22 +177,25 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="403">
+          <caret line="310" column="51" selection-start-line="310" selection-start-column="51" selection-end-line="310" selection-end-column="51" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main-rem.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5610">
-          <caret line="170" column="27" lean-forward="true" selection-start-line="170" selection-start-column="27" selection-end-line="170" selection-end-column="27" />
+        <state relative-caret-position="610">
+          <caret line="357" selection-start-line="357" selection-end-line="357" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8085">
-          <caret line="245" column="24" lean-forward="true" selection-start-line="245" selection-start-column="24" selection-end-line="245" selection-end-column="24" />
+        <state relative-caret-position="808">
+          <caret line="315" selection-start-line="315" selection-end-line="315" />
         </state>
       </provider>
     </entry>
