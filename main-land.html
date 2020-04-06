@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>TD-3500</title>
+    <!--    <link rel="stylesheet" type="text/css" href="main.css">-->
+    <link rel="stylesheet" type="text/css" href="main-land.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        window.onload = function () {
+            //rem转换
+            getRem(720, 10);
+            // 电压监视初始化赋值
+            var voltageMonitoringNum = document.getElementById('voltageMonitoring').innerText;
+            document.getElementById('voltageMonitoring').innerText = parseFloat(voltageMonitoringNum).toFixed(2);
+
+            // 电流监视初始化赋值
+            var currentMonitoringNum = document.getElementById('currentMonitoring').innerText;
+            document.getElementById('currentMonitoring').innerText = parseFloat(currentMonitoringNum).toFixed(2);
+
+            // 功率监视初始化赋值
+            var powerMonitoringVal = document.getElementById('powerMonitoring').innerText;
+            document.getElementById('powerMonitoring').innerText = parseFloat(powerMonitoringVal).toFixed(2);
+
+            // 探测器计数监视初始化赋值
+            var detectorMonitoringVal = document.getElementById('detectorMonitoring').innerText;
+            document.getElementById('detectorMonitoring').innerText = parseFloat(detectorMonitoringVal).toFixed(1);
+
+            // 水温监视初始化赋值
+            var waterTemperatureMonitoringVal = document.getElementById('waterTemperatureMonitoring').innerText;
+            document.getElementById('waterTemperatureMonitoring').innerText = parseFloat(waterTemperatureMonitoringVal).toFixed(1);
+
+            // 管温监视初始化赋值
+            var tubeTemperatureMonitoringVal = document.getElementById('tubeTemperatureMonitoring').innerText;
+            document.getElementById('tubeTemperatureMonitoring').innerText = parseFloat(tubeTemperatureMonitoringVal).toFixed(1);
+
+            // Ts轴监视初始化赋值
+            var TsMonitoringVal = document.getElementById('TsMonitoring').innerText;
+            document.getElementById('TsMonitoring').innerText = parseFloat(TsMonitoringVal).toFixed(4);
+
+            // Td轴监视初始化赋值
+            var TdMonitoringVal = document.getElementById('TdMonitoring').innerText;
+            document.getElementById('TdMonitoring').innerText = parseFloat(TdMonitoringVal).toFixed(4);
+
+            // Phi轴监视初始化赋值
+            var PhiMonitoringVal = document.getElementById('PhiMonitoring').innerText;
+            document.getElementById('PhiMonitoring').innerText = parseFloat(PhiMonitoringVal).toFixed(4);
+        };
+        window.onresize = function () {
+            getRem(720, 8)
+        };
+
+        function getRem(pwidth, prem) {
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth / pwidth * prem + "px";
+        }
+    </script>
 </head>
 <body>
-<<<<<<< HEAD
 <div>
     <div class="content">
         <!--头部-->
@@ -29,55 +81,55 @@
                             <div class="card-title">X射线高压发生器</div>
                             <div class="card-tr">
                                 <div class="card-td-first">电压监视</div>
-                                <div class="card-td-second" id="voltageMonitoring">:=Tube_KV_Dispplay:</div>
+                                <div class="card-td-second" id="voltageMonitoring">:=Voltage:</div>
                                 <div class="card-td-third">KV</div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-first">电流监视</div>
-                                <div class="card-td-second" id="currentMonitoring">:=Tube_mA_Display:</div>
+                                <div class="card-td-second" id="currentMonitoring">:=Current:</div>
                                 <div class="card-td-third">mA</div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-first">功率监视</div>
-                                <div class="card-td-second" id="powerMonitoring">:=Tube_Power_Display:</div>
+                                <div class="card-td-second" id="powerMonitoring">:=Current:</div>
                                 <div class="card-td-third">W</div>
                             </div>
-                        </div>
+                        <!-- </div> -->
                         <!--动态数据-->
-                        <div class="card-item">
+                        <!-- <div class="card-item"> -->
                             <div class="card-title">动态数据</div>
                             <div class="card-tr">
                                 <div class="card-td-first">探测器</div>
-                                <div class="card-td-second" id="detectorMonitoring">:=SC_Count:</div>
+                                <div class="card-td-second" id="detectorMonitoring">:=div5:</div>
                                 <div class="card-td-third">CPS</div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-first">水温监视</div>
-                                <div class="card-td-second" id="waterTemperatureMonitoring">:=SampingWater_Tube:</div>
+                                <div class="card-td-second" id="waterTemperatureMonitoring">:=div5:</div>
                                 <div class="card-td-third">℃</div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-first">管温监视</div>
-                                <div class="card-td-second" id="tubeTemperatureMonitoring">:=Temp_Tube_Dispplay:</div>
+                                <div class="card-td-second" id="tubeTemperatureMonitoring">:=div5:</div>
                                 <div class="card-td-third">℃</div>
                             </div>
-                        </div>
+                        <!-- </div> -->
                         <!--立式测角仪-->
-                        <div class="card-item">
+                        <!-- <div class="card-item"> -->
                             <div class="card-title">立式测角仪</div>
                             <div class="card-tr">
                                 <div class="card-td-first">Ts轴</div>
-                                <div class="card-td-second" id="TsMonitoring">:=Motion_Position_Ts:</div>
+                                <div class="card-td-second" id="TsMonitoring">:=Current:</div>
                                 <div class="card-td-third">Deg</div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-first">Td轴</div>
-                                <div class="card-td-second" id="TdMonitoring">:=Motion_Position_Td:</div>
+                                <div class="card-td-second" id="TdMonitoring">:=Current:</div>
                                 <div class="card-td-third">Deg</div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-first">Phi轴</div>
-                                <div class="card-td-second" id="PhiMonitoring">:=Motion_Position_Phi:</div>
+                                <div class="card-td-second" id="PhiMonitoring">:=Current:</div>
                                 <div class="card-td-third">Deg</div>
                             </div>
                         </div>
@@ -86,7 +138,7 @@
                 <div class="tab-item-border">
                     <div class="tab-item">
                         <!--X射线高压发生器-->
-                        <div class="card-item">
+                        <!-- <div class="card-item">
                             <div class="card-title blue">X射线高压发生器</div>
                             <div class="card-tr">
                                 <div class="card-td-l">
@@ -114,7 +166,7 @@
                                     <img src="images/sub.png">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!--操作-->
                         <div class="card-item">
                             <div class="card-tr-l">
@@ -146,7 +198,7 @@
                         </div>
 
                         <!--冷却循环水装置-->
-                        <div class="card-item">
+                        <!-- <div class="card-item">
                             <div class="card-title blue">冷却循环水装置</div>
                             <div class="card-tr">
                                 <div class="card-td-l">
@@ -174,7 +226,7 @@
                                     <img src="images/sub.png">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -205,9 +257,9 @@
                                     <div class="card-td-two-lamp"></div>
                                 </div>
                             </div>
-                        </div>
+                        <!-- </div> -->
                         <!--X射线高压发生器-->
-                        <div class="card-item">
+                        <!-- <div class="card-item"> -->
                             <div class="card-title blueTitle">X射线高压发生器</div>
                             <div class="card-tr">
                                 <div class="card-td-two">
@@ -229,9 +281,9 @@
                                     <div class="card-td-btn-access">正常</div>
                                 </div>
                             </div>
-                        </div>
+                        <!-- </div> -->
                         <!--冷却循环水装置-->
-                        <div class="card-item">
+                        <!-- <div class="card-item"> -->
                             <div class="card-title blueTitle">冷却循环水装置</div>
                             <div class="card-tr">
                                 <div class="card-td-two">
@@ -311,13 +363,5 @@
 
     }
 </script>
-=======
-<p>选择浏览版面</p>
-<p></p>
-<p>
-    <a href="main-rem.html"> <img border="3" src="images/computer.png"></a>
-    <a href="main-land.html"> <img border="3" src="images/mobile.png"> </a>
-</p>
->>>>>>> develop
 </body>
 </html>
