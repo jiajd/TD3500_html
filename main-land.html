@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>TD-3500</title>
-    <!--    <link rel="stylesheet" type="text/css" href="main.css">-->
-    <link rel="stylesheet" type="text/css" href="main-land.css">
+    <link rel="stylesheet" type="text/css" href="main-rem.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script>
         window.onload = function () {
@@ -61,76 +60,76 @@
 <div>
     <div class="content">
         <!--头部-->
-        <div class="header">
+        <div class="header-land">
             TD-3500型X射线多晶衍射仪控制系统
         </div>
         <!--选项卡内容-->
         <div class="tab-content">
             <!--tab选项卡组-->
             <div class="tab-group">
-                <div class="tab active" id="systemParameter" onclick="changeTab('systemParameter')">系统参数</div>
-                <div class="tab" id="stateBrowsing" onclick="changeTab('stateBrowsing')">状态浏览</div>
-                <div class="tab" id="deviceParameters" onclick="changeTab('deviceParameters')">设备参数</div>
+                <div class="tab-land active" id="systemParameter" onclick="changeTab('systemParameter')">系统参数</div>
+                <div class="tab-land" id="stateBrowsing" onclick="changeTab('stateBrowsing')">状态浏览</div>
+                <div class="tab-land" id="deviceParameters" onclick="changeTab('deviceParameters')">设备参数</div>
             </div>
             <!--系统参数-->
             <div class="tabView show" id="systemParameterView">
                 <div class="tab-item-border">
                     <div class="tab-item">
                         <!--X射线高压发生器-->
-                        <div class="card-item">
-                            <div class="card-title">X射线高压发生器</div>
+                        <div class="card-item-land">
+                            <div class="card-title-land">X射线高压发生器</div>
                             <div class="card-tr">
-                                <div class="card-td-first">电压监视</div>
-                                <div class="card-td-second" id="voltageMonitoring">:=Voltage:</div>
-                                <div class="card-td-third">KV</div>
+                                <div class="card-td-first-land">电压监视</div>
+                                <div class="card-td-second-land" id="voltageMonitoring">:=Voltage:</div>
+                                <div class="card-td-third-land">KV</div>
                             </div>
                             <div class="card-tr">
-                                <div class="card-td-first">电流监视</div>
-                                <div class="card-td-second" id="currentMonitoring">:=Current:</div>
-                                <div class="card-td-third">mA</div>
+                                <div class="card-td-first-land">电流监视</div>
+                                <div class="card-td-second-land" id="currentMonitoring">:=Current:</div>
+                                <div class="card-td-third-land">mA</div>
                             </div>
                             <div class="card-tr">
-                                <div class="card-td-first">功率监视</div>
-                                <div class="card-td-second" id="powerMonitoring">:=Current:</div>
-                                <div class="card-td-third">W</div>
+                                <div class="card-td-first-land">功率监视</div>
+                                <div class="card-td-second-land" id="powerMonitoring">:=Current:</div>
+                                <div class="card-td-third-land">W</div>
                             </div>
                         <!-- </div> -->
                         <!--动态数据-->
-                        <!-- <div class="card-item"> -->
-                            <div class="card-title">动态数据</div>
+                        <!-- <div class="card-item-land"> -->
+                            <div class="card-title-land">动态数据</div>
                             <div class="card-tr">
-                                <div class="card-td-first">探测器</div>
-                                <div class="card-td-second" id="detectorMonitoring">:=div5:</div>
-                                <div class="card-td-third">CPS</div>
+                                <div class="card-td-first-land">探测器</div>
+                                <div class="card-td-second-land" id="detectorMonitoring">:=div5:</div>
+                                <div class="card-td-third-land">CPS</div>
                             </div>
                             <div class="card-tr">
-                                <div class="card-td-first">水温监视</div>
-                                <div class="card-td-second" id="waterTemperatureMonitoring">:=div5:</div>
-                                <div class="card-td-third">℃</div>
+                                <div class="card-td-first-land">水温监视</div>
+                                <div class="card-td-second-land" id="waterTemperatureMonitoring">:=div5:</div>
+                                <div class="card-td-third-land">℃</div>
                             </div>
                             <div class="card-tr">
-                                <div class="card-td-first">管温监视</div>
-                                <div class="card-td-second" id="tubeTemperatureMonitoring">:=div5:</div>
-                                <div class="card-td-third">℃</div>
+                                <div class="card-td-first-land">管温监视</div>
+                                <div class="card-td-second-land" id="tubeTemperatureMonitoring">:=div5:</div>
+                                <div class="card-td-third-land">℃</div>
                             </div>
                         <!-- </div> -->
                         <!--立式测角仪-->
-                        <!-- <div class="card-item"> -->
-                            <div class="card-title">立式测角仪</div>
+                        <!-- <div class="card-item-land"> -->
+                            <div class="card-title-land">立式测角仪</div>
                             <div class="card-tr">
-                                <div class="card-td-first">Ts轴</div>
-                                <div class="card-td-second" id="TsMonitoring">:=Current:</div>
-                                <div class="card-td-third">Deg</div>
+                                <div class="card-td-first-land">Ts轴</div>
+                                <div class="card-td-second-land" id="TsMonitoring">:=Current:</div>
+                                <div class="card-td-third-land">Deg</div>
                             </div>
                             <div class="card-tr">
-                                <div class="card-td-first">Td轴</div>
-                                <div class="card-td-second" id="TdMonitoring">:=Current:</div>
-                                <div class="card-td-third">Deg</div>
+                                <div class="card-td-first-land">Td轴</div>
+                                <div class="card-td-second-land" id="TdMonitoring">:=Current:</div>
+                                <div class="card-td-third-land">Deg</div>
                             </div>
                             <div class="card-tr">
-                                <div class="card-td-first">Phi轴</div>
-                                <div class="card-td-second" id="PhiMonitoring">:=Current:</div>
-                                <div class="card-td-third">Deg</div>
+                                <div class="card-td-first-land">Phi轴</div>
+                                <div class="card-td-second-land" id="PhiMonitoring">:=Current:</div>
+                                <div class="card-td-third-land">Deg</div>
                             </div>
                         </div>
                     </div>
@@ -138,8 +137,8 @@
                 <div class="tab-item-border">
                     <div class="tab-item">
                         <!--X射线高压发生器-->
-                        <!-- <div class="card-item">
-                            <div class="card-title blue">X射线高压发生器</div>
+                        <!-- <div class="card-item-land">
+                            <div class="card-title-land blue">X射线高压发生器</div>
                             <div class="card-tr">
                                 <div class="card-td-l">
                                     <div>电压设置</div>
@@ -168,7 +167,7 @@
                             </div>
                         </div> -->
                         <!--操作-->
-                        <div class="card-item">
+                        <div class="card-item-land">
                             <div class="card-tr-l">
                                 <div class="btn-box">
                                     <div class="btn-red">
@@ -198,8 +197,8 @@
                         </div>
 
                         <!--冷却循环水装置-->
-                        <!-- <div class="card-item">
-                            <div class="card-title blue">冷却循环水装置</div>
+                        <!-- <div class="card-item-land">
+                            <div class="card-title-land blue">冷却循环水装置</div>
                             <div class="card-tr">
                                 <div class="card-td-l">
                                     <div>温度设置</div>
@@ -235,80 +234,80 @@
                 <div class="tab-item-border">
                     <div class="tab-item">
                         <!--系统状态-->
-                        <div class="card-item">
-                            <div class="card-title blueTitle">系统状态</div>
+                        <div class="card-item-land">
+                            <div class="card-title-land blueTitle-land">系统状态</div>
                             <div class="card-tr">
                                 <div class="card-td-two">
-                                    <div class="card-td-two-title">高压运行</div>
-                                    <div class="card-td-two-lamp"></div>
+                                    <div class="card-td-two-title-land">高压运行</div>
+                                    <div class="card-td-two-lamp-land"></div>
                                 </div>
                                 <div class="card-td-two">
-                                    <div class="card-td-two-title">光闸故障</div>
-                                    <div class="card-td-two-lamp"></div>
+                                    <div class="card-td-two-title-land">光闸故障</div>
+                                    <div class="card-td-two-lamp-land"></div>
                                 </div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-two">
-                                    <div class="card-td-two-title">急停开关</div>
-                                    <div class="card-td-two-lamp"></div>
+                                    <div class="card-td-two-title-land">急停开关</div>
+                                    <div class="card-td-two-lamp-land"></div>
                                 </div>
                                 <div class="card-td-two">
-                                    <div class="card-td-two-title">门机连锁</div>
-                                    <div class="card-td-two-lamp"></div>
+                                    <div class="card-td-two-title-land">门机连锁</div>
+                                    <div class="card-td-two-lamp-land"></div>
                                 </div>
                             </div>
                         <!-- </div> -->
                         <!--X射线高压发生器-->
-                        <!-- <div class="card-item"> -->
-                            <div class="card-title blueTitle">X射线高压发生器</div>
+                        <!-- <div class="card-item-land"> -->
+                            <div class="card-title-land blueTitle-land">X射线高压发生器</div>
                             <div class="card-tr">
                                 <div class="card-td-two">
-                                    <div class="card-td-two-title">管电压</div>
-                                    <div class="card-td-btn-access">正常</div>
+                                    <div class="card-td-two-title-land">管电压</div>
+                                    <div class="card-td-btn-access-land">正常</div>
                                 </div>
                                 <div class="card-td-two">
-                                    <div class="card-td-two-title">管电流</div>
-                                    <div class="card-td-btn-access">正常</div>
+                                    <div class="card-td-two-title-land">管电流</div>
+                                    <div class="card-td-btn-access-land">正常</div>
                                 </div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-two">
-                                    <div class="card-td-two-title">球管超温</div>
-                                    <div class="card-td-btn-access">正常</div>
+                                    <div class="card-td-two-title-land">球管超温</div>
+                                    <div class="card-td-btn-access-land">正常</div>
                                 </div>
                                 <div class="card-td-two">
-                                    <div class="card-td-two-title">输出功率</div>
-                                    <div class="card-td-btn-access">正常</div>
+                                    <div class="card-td-two-title-land">输出功率</div>
+                                    <div class="card-td-btn-access-land">正常</div>
                                 </div>
                             </div>
                         <!-- </div> -->
                         <!--冷却循环水装置-->
-                        <!-- <div class="card-item"> -->
-                            <div class="card-title blueTitle">冷却循环水装置</div>
+                        <!-- <div class="card-item-land"> -->
+                            <div class="card-title-land blueTitle-land">冷却循环水装置</div>
                             <div class="card-tr">
                                 <div class="card-td-two">
-                                    <div class="card-td-two-title">循环水温度</div>
-                                    <div class="card-td-btn-access">正常</div>
+                                    <div class="card-td-two-title-land">循环水温度</div>
+                                    <div class="card-td-btn-access-land">正常</div>
                                 </div>
                                 <div class="card-td-two">
-                                    <div class="card-td-two-title">回水流量</div>
-                                    <div class="card-td-btn-wrong">下限</div>
+                                    <div class="card-td-two-title-land">回水流量</div>
+                                    <div class="card-td-btn-wrong-land">下限</div>
                                 </div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-two">
-                                    <div class="card-td-two-title">出水压力</div>
-                                    <div class="card-td-btn-access">正常</div>
+                                    <div class="card-td-two-title-land">出水压力</div>
+                                    <div class="card-td-btn-access-land">正常</div>
                                 </div>
                                 <div class="card-td-two">
-                                    <div class="card-td-two-title">温度传感器</div>
-                                    <div class="card-td-btn-access">正常</div>
+                                    <div class="card-td-two-title-land">温度传感器</div>
+                                    <div class="card-td-btn-access-land">正常</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="reset-btn-group">
-                        <div class="reset-btn">系统复位</div>
+                        <div class="reset-btn-land">系统复位</div>
                     </div>
                 </div>
             </div>
@@ -317,22 +316,22 @@
                 <div class="tab-item-border">
                     <div class="tab-item">
                         <!--X射线高压发生器-->
-                        <div class="card-item">
-                            <div class="card-title blueTitle">X射线高压发生器</div>
+                        <div class="card-item-land">
+                            <div class="card-title-land blueTitle-land">X射线高压发生器</div>
                             <div class="card-tr">
-                                <div class="card-td-first">电压上限</div>
-                                <div class="card-td-second" id="upperVoltageLimit">0</div>
-                                <div class="card-td-third">KV</div>
+                                <div class="card-td-first-land">电压上限</div>
+                                <div class="card-td-second-land" id="upperVoltageLimit">0</div>
+                                <div class="card-td-third-land">KV</div>
                             </div>
                             <div class="card-tr">
-                                <div class="card-td-first">电流上限</div>
-                                <div class="card-td-second" id="upperCurrentLimit">0</div>
-                                <div class="card-td-third">mA</div>
+                                <div class="card-td-first-land">电流上限</div>
+                                <div class="card-td-second-land" id="upperCurrentLimit">0</div>
+                                <div class="card-td-third-land">mA</div>
                             </div>
                             <div class="card-tr">
-                                <div class="card-td-first">功率上限</div>
-                                <div class="card-td-second" id="upperPowerLimit">0</div>
-                                <div class="card-td-third">W</div>
+                                <div class="card-td-first-land">功率上限</div>
+                                <div class="card-td-second-land" id="upperPowerLimit">0</div>
+                                <div class="card-td-third-land">W</div>
                             </div>
                         </div>
                     </div>
@@ -349,7 +348,7 @@
     //切换tab方法
     function changeTab(id) {
         //选项卡样式切换
-        var tabBtn = document.getElementsByClassName('tab');
+        var tabBtn = document.getElementsByClassName('tab-land');
         for (var j = 0; j < tabBtn.length; j++) {
             tabBtn[j].classList.remove('active');
         }
