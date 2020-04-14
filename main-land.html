@@ -7,44 +7,45 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script>
         window.onload = function () {
-            //rem转换
-            getRem(720, 10);
-            // 电压监视初始化赋值
-            var voltageMonitoringNum = document.getElementById('voltageMonitoring').innerText;
-            document.getElementById('voltageMonitoring').innerText = parseFloat(voltageMonitoringNum).toFixed(2);
+            getRem(720, 10); //rem转换
+            var mv = document.getElementById('voltageMonitoring').innerText;
+            document.getElementById('voltageMonitoring').innerText = parseFloat(mv).toFixed(2); // 电压监视初始化赋值
 
-            // 电流监视初始化赋值
-            var currentMonitoringNum = document.getElementById('currentMonitoring').innerText;
-            document.getElementById('currentMonitoring').innerText = parseFloat(currentMonitoringNum).toFixed(2);
+            mv = document.getElementById('currentMonitoring').innerText;
+            document.getElementById('currentMonitoring').innerText = parseFloat(mv).toFixed(2); // 电流监视初始化赋值
 
-            // 功率监视初始化赋值
-            var powerMonitoringVal = document.getElementById('powerMonitoring').innerText;
-            document.getElementById('powerMonitoring').innerText = parseFloat(powerMonitoringVal).toFixed(2);
+            mv = document.getElementById('powerMonitoring').innerText;
+            document.getElementById('powerMonitoring').innerText = parseFloat(mv).toFixed(2);   // 功率监视初始化赋值
 
-            // 探测器计数监视初始化赋值
-            var detectorMonitoringVal = document.getElementById('detectorMonitoring').innerText;
-            document.getElementById('detectorMonitoring').innerText = parseFloat(detectorMonitoringVal).toFixed(1);
+            mv = document.getElementById('detectorMonitoring').innerText;
+            document.getElementById('detectorMonitoring').innerText = parseFloat(mv).toFixed(1); // 探测器计数监视初始化赋值
 
-            // 水温监视初始化赋值
-            var waterTemperatureMonitoringVal = document.getElementById('waterTemperatureMonitoring').innerText;
-            document.getElementById('waterTemperatureMonitoring').innerText = parseFloat(waterTemperatureMonitoringVal).toFixed(1);
+            mv = document.getElementById('waterTemperatureMonitoring').innerText;
+            document.getElementById('waterTemperatureMonitoring').innerText = parseFloat(mv).toFixed(1); // 水温监视初始化赋值
 
-            // 管温监视初始化赋值
-            var tubeTemperatureMonitoringVal = document.getElementById('tubeTemperatureMonitoring').innerText;
-            document.getElementById('tubeTemperatureMonitoring').innerText = parseFloat(tubeTemperatureMonitoringVal).toFixed(1);
+            mv = document.getElementById('tubeTemperatureMonitoring').innerText;
+            document.getElementById('tubeTemperatureMonitoring').innerText = parseFloat(mv).toFixed(1); // 管温监视初始化赋值
 
-            // Ts轴监视初始化赋值
-            var TsMonitoringVal = document.getElementById('TsMonitoring').innerText;
-            document.getElementById('TsMonitoring').innerText = parseFloat(TsMonitoringVal).toFixed(4);
+            mv = document.getElementById('TsMonitoring').innerText;
+            document.getElementById('TsMonitoring').innerText = parseFloat(mv).toFixed(4); // Ts轴监视初始化赋值
 
-            // Td轴监视初始化赋值
-            var TdMonitoringVal = document.getElementById('TdMonitoring').innerText;
-            document.getElementById('TdMonitoring').innerText = parseFloat(TdMonitoringVal).toFixed(4);
+            mv = document.getElementById('TdMonitoring').innerText;
+            document.getElementById('TdMonitoring').innerText = parseFloat(mv).toFixed(4); // Td轴监视初始化赋值
 
-            // Phi轴监视初始化赋值
-            var PhiMonitoringVal = document.getElementById('PhiMonitoring').innerText;
-            document.getElementById('PhiMonitoring').innerText = parseFloat(PhiMonitoringVal).toFixed(4);
+            mv = document.getElementById('PhiMonitoring').innerText;
+            document.getElementById('PhiMonitoring').innerText = parseFloat(mv).toFixed(4); // Phi轴监视初始化赋值
+
+
+            mv = document.getElementById('upperVoltageLimit').innerText;
+            document.getElementById('upperVoltageLimit').innerText = parseFloat(mv).toFixed(2); // 电压上限
+
+            mv = document.getElementById('upperCurrentLimit').innerText;
+            document.getElementById('upperCurrentLimit').innerText = parseFloat(mv).toFixed(2); // 电流上限
+
+            mv = document.getElementById('upperPowerLimit').innerText;
+            document.getElementById('upperPowerLimit').innerText = parseFloat(mv).toFixed(2); // 功率上限
         };
+
         window.onresize = function () {
             getRem(720, 8)
         };
@@ -80,17 +81,17 @@
                             <div class="card-title-land">X射线高压发生器</div>
                             <div class="card-tr">
                                 <div class="card-td-first-land">电压监视</div>
-                                <div class="card-td-second-land" id="voltageMonitoring">:=Voltage:</div>
+                                <div class="card-td-second-land" id="voltageMonitoring">:=Tube_KV_Dispplay:</div>
                                 <div class="card-td-third-land">KV</div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-first-land">电流监视</div>
-                                <div class="card-td-second-land" id="currentMonitoring">:=Current:</div>
+                                <div class="card-td-second-land" id="currentMonitoring">:=Tube_mA_Display:</div>
                                 <div class="card-td-third-land">mA</div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-first-land">功率监视</div>
-                                <div class="card-td-second-land" id="powerMonitoring">:=Current:</div>
+                                <div class="card-td-second-land" id="powerMonitoring">:=Tube_Power_Display:</div>
                                 <div class="card-td-third-land">W</div>
                             </div>
                         <!-- </div> -->
@@ -99,17 +100,17 @@
                             <div class="card-title-land">动态数据</div>
                             <div class="card-tr">
                                 <div class="card-td-first-land">探测器</div>
-                                <div class="card-td-second-land" id="detectorMonitoring">:=div5:</div>
+                                <div class="card-td-second-land" id="detectorMonitoring">:=SC_Count:</div>
                                 <div class="card-td-third-land">CPS</div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-first-land">水温监视</div>
-                                <div class="card-td-second-land" id="waterTemperatureMonitoring">:=div5:</div>
+                                <div class="card-td-second-land" id="waterTemperatureMonitoring">:=SampingWater_Tube:</div>
                                 <div class="card-td-third-land">℃</div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-first-land">管温监视</div>
-                                <div class="card-td-second-land" id="tubeTemperatureMonitoring">:=div5:</div>
+                                <div class="card-td-second-land" id="tubeTemperatureMonitoring">:=Temp_Tube_Dispplay:</div>
                                 <div class="card-td-third-land">℃</div>
                             </div>
                         <!-- </div> -->
@@ -118,17 +119,17 @@
                             <div class="card-title-land">立式测角仪</div>
                             <div class="card-tr">
                                 <div class="card-td-first-land">Ts轴</div>
-                                <div class="card-td-second-land" id="TsMonitoring">:=Current:</div>
+                                <div class="card-td-second-land" id="TsMonitoring">:=Motion_Position_Ts:</div>
                                 <div class="card-td-third-land">Deg</div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-first-land">Td轴</div>
-                                <div class="card-td-second-land" id="TdMonitoring">:=Current:</div>
+                                <div class="card-td-second-land" id="TdMonitoring">:=Motion_Position_Td:</div>
                                 <div class="card-td-third-land">Deg</div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-first-land">Phi轴</div>
-                                <div class="card-td-second-land" id="PhiMonitoring">:=Current:</div>
+                                <div class="card-td-second-land" id="PhiMonitoring">:=Motion_Position_Phi:</div>
                                 <div class="card-td-third-land">Deg</div>
                             </div>
                         </div>
@@ -320,17 +321,17 @@
                             <div class="card-title-land blueTitle-land">X射线高压发生器</div>
                             <div class="card-tr">
                                 <div class="card-td-first-land">电压上限</div>
-                                <div class="card-td-second-land" id="upperVoltageLimit">0</div>
+                                <div class="card-td-second-land" id="upperVoltageLimit">:=Tube_KV_Limit_SET:</div>
                                 <div class="card-td-third-land">KV</div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-first-land">电流上限</div>
-                                <div class="card-td-second-land" id="upperCurrentLimit">0</div>
+                                <div class="card-td-second-land" id="upperCurrentLimit">:=Tube_mA_Limit_SET:</div>
                                 <div class="card-td-third-land">mA</div>
                             </div>
                             <div class="card-tr">
                                 <div class="card-td-first-land">功率上限</div>
-                                <div class="card-td-second-land" id="upperPowerLimit">0</div>
+                                <div class="card-td-second-land" id="upperPowerLimit">:=Tube_Power_Limit_SET:</div>
                                 <div class="card-td-third-land">W</div>
                             </div>
                         </div>
