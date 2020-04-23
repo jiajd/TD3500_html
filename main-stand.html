@@ -68,71 +68,71 @@
 <body>
     <div>
         <div class="content">
-            <div class="header"> TD-3500 型X射线衍射仪控制系统 </div>
+            <div class="header-stand"> TD-3500 型X射线衍射仪控制系统 </div>
             <div class="tab-content">
                 <div class="tab-group">
-                    <div class="tab active" id="systemParameter" onclick="changeTab('systemParameter')">系统参数</div>
-                    <div class="tab" id="stateBrowsing" onclick="changeTab('stateBrowsing')">状态浏览</div>
-                    <div class="tab" id="deviceParameters" onclick="changeTab('deviceParameters')">设备参数</div>
+                    <div class="tab-stand active" id="systemParameter" onclick="changeTab('systemParameter')">系统参数</div>
+                    <div class="tab-stand" id="stateBrowsing" onclick="changeTab('stateBrowsing')">状态浏览</div>
+                    <div class="tab-stand" id="deviceParameters" onclick="changeTab('deviceParameters')">设备参数</div>
                 </div>
 
                 <div class="tabView show" id="systemParameterView">
                     <div class="tab-item-border">
                         <div class="tab-item">
-                            <div class="card-item">
-                                <div class="card-title">X射线高压发生器</div>
+                            <div class="card-item-stand">
+                                <div class="card-title-stand">X射线高压发生器</div>
                                 <div class="card-tr">
-                                    <div class="card-td-first">电压监视</div>
-                                    <div class="card-td-second" id="voltageMonitoring">:=Tube_KV_Dispplay:</div>
-                                    <div class="card-td-third">KV</div>
+                                    <div class="card-td-first-stand">电压监视</div>
+                                    <div class="card-td-second-stand" id="voltageMonitoring">:=Tube_KV_Dispplay:</div>
+                                    <div class="card-td-third-stand">KV</div>
                                 </div>
                                 <div class="card-tr">
-                                    <div class="card-td-first">电流监视</div>
-                                    <div class="card-td-second" id="currentMonitoring">:=Tube_mA_Display:</div>
-                                    <div class="card-td-third">mA</div>
+                                    <div class="card-td-first-stand">电流监视</div>
+                                    <div class="card-td-second-stand" id="currentMonitoring">:=Tube_mA_Display:</div>
+                                    <div class="card-td-third-stand">mA</div>
                                 </div>
                                 <div class="card-tr">
-                                    <div class="card-td-first">功率监视</div>
-                                    <div class="card-td-second" id="powerMonitoring">:=Tube_Power_Display:</div>
-                                    <div class="card-td-third">W</div>
+                                    <div class="card-td-first-stand">功率监视</div>
+                                    <div class="card-td-second-stand" id="powerMonitoring">:=Tube_Power_Display:</div>
+                                    <div class="card-td-third-stand">W</div>
                                 </div>
-                            </div>
+                                <!-- </div> -->
 
-                            <div class="card-item">
-                                <div class="card-title">动态数据</div>
+                                <!-- <div class="card-item-stand"> -->
+                                <div class="card-title-stand">动态数据</div>
                                 <div class="card-tr">
-                                    <div class="card-td-first">探测器</div>
-                                    <div class="card-td-second" id="detectorMonitoring">:=SC_Count:</div>
-                                    <div class="card-td-third">CPS</div>
+                                    <div class="card-td-first-stand">探测器</div>
+                                    <div class="card-td-second-stand" id="detectorMonitoring">:=SC_Count:</div>
+                                    <div class="card-td-third-stand">CPS</div>
                                 </div>
                                 <div class="card-tr">
-                                    <div class="card-td-first">水温监视</div>
-                                    <div class="card-td-second" id="waterTemperatureMonitoring">:=SampingWater_Tube: </div>
-                                    <div class="card-td-third">℃</div>
+                                    <div class="card-td-first-stand">水温监视</div>
+                                    <div class="card-td-second-stand" id="waterTemperatureMonitoring"> :=SampingWater_Tube:</div>
+                                    <div class="card-td-third-stand">℃</div>
                                 </div>
                                 <div class="card-tr">
-                                    <div class="card-td-first">管温监视</div>
-                                    <div class="card-td-second" id="tubeTemperatureMonitoring">:=Temp_Tube_Dispplay: </div>
-                                    <div class="card-td-third">℃</div>
+                                    <div class="card-td-first-stand">管温监视</div>
+                                    <div class="card-td-second-stand" id="tubeTemperatureMonitoring"> :=Temp_Tube_Dispplay:</div>
+                                    <div class="card-td-third-stand">℃</div>
                                 </div>
-                            </div>
+                                <!-- </div> -->
 
-                            <div class="card-item">
-                                <div class="card-title">立式测角仪</div>
+                                <!-- <div class="card-item-stand"> -->
+                                <div class="card-title-stand">立式测角仪</div>
                                 <div class="card-tr">
-                                    <div class="card-td-first">Ts轴</div>
-                                    <div class="card-td-second" id="TsMonitoring">:=Motion_Position_Ts:</div>
-                                    <div class="card-td-third">Deg</div>
+                                    <div class="card-td-first-stand">Ts轴</div>
+                                    <div class="card-td-second-stand" id="TsMonitoring">:=Motion_Position_Ts:</div>
+                                    <div class="card-td-third-stand">Deg</div>
                                 </div>
                                 <div class="card-tr">
-                                    <div class="card-td-first">Td轴</div>
-                                    <div class="card-td-second" id="TdMonitoring">:=Motion_Position_Td:</div>
-                                    <div class="card-td-third">Deg</div>
+                                    <div class="card-td-first-stand">Td轴</div>
+                                    <div class="card-td-second-stand" id="TdMonitoring">:=Motion_Position_Td:</div>
+                                    <div class="card-td-third-stand">Deg</div>
                                 </div>
                                 <div class="card-tr">
-                                    <div class="card-td-first">Phi轴</div>
-                                    <div class="card-td-second" id="PhiMonitoring">:=Motion_Position_Phi:</div>
-                                    <div class="card-td-third">Deg</div>
+                                    <div class="card-td-first-stand">Phi轴</div>
+                                    <div class="card-td-second-stand" id="PhiMonitoring">:=Motion_Position_Phi:</div>
+                                    <div class="card-td-third-stand">Deg</div>
                                 </div>
                             </div>
                         </div>
@@ -155,51 +155,51 @@
                             <!-- <input class="card-td-l" onkeyup="value=value.replace(/[^\d\.]/g,'')" onblur="value=value.replace(/[^\d\.]/g,'')" value="" id="setTd" /> -->
                             <!-- <div class="card-btn" onclick="setValue('setTd','idTd')">设置</div> -->
 
-                            <!-- <div class="card-item">
-                                <div class="card-title blue">X射线高压发生器</div>
-                                <div class="card-tr">
-                                    <div class="card-td-l">
-                                        <div>电压[kV]</div>
-                                        <div class="unit">mA</div>
-                                    </div>
-                                    <div class="card-td-s">
-                                        <img src="images/add.png">
-                                    </div>
-                                    <div class="card-td-l">5</div>
-                                    <div class="card-td-s">
-                                        <img src="images/sub.png">
-                                    </div>
+                            <!-- <div class="card-item-stand">
+                            <div class="card-title-stand blue">X射线高压发生器</div>
+                            <div class="card-tr">
+                                <div class="card-td-l">
+                                    <div>电压设置</div>
+                                    <div class="unit">KV</div>
                                 </div>
-
-                                <div class="card-tr">
-                                    <div class="card-td-l">
-                                        <div>电流设置</div>
-                                        <div class="unit">mA</div>
-                                    </div>
-                                    <div class="card-td-s">
-                                        <img src="images/add.png">
-                                    </div>
-                                    <div class="card-td-l">5</div>
-                                    <div class="card-td-s">
-                                        <img src="images/sub.png">
-                                    </div>
+                                <div class="card-td-s">
+                                    <img src="images/add.png">
                                 </div>
-                            </div> -->
+                                <div class="card-td-l">10</div>
+                                <div class="card-td-s">
+                                    <img src="images/sub.png">
+                                </div>
+                            </div>
+
+                            <div class="card-tr">
+                                <div class="card-td-l">
+                                    <div>电流设置</div>
+                                    <div class="unit">mA</div>
+                                </div>
+                                <div class="card-td-s">
+                                    <img src="images/add.png">
+                                </div>
+                                <div class="card-td-l">5</div>
+                                <div class="card-td-s">
+                                    <img src="images/sub.png">
+                                </div>
+                            </div>
+                        </div> -->
 
 
-                            <div class="card-item">
-                                <div class="card-title">仪器操控</div>
+                            <div class="card-item-stand">
+                                <div class="card-title-stand">仪器操控</div>
                                 <div class="card-tr-l">
-                                    <div class="card-td-first">高压</div>
+                                    <div class="card-td-first-stand">高压</div>
                                     <div>
                                         <img class=“card-td-s"
-                                            style="vertical-align: bottom; margin: 0px; height: 2.5rem; width: 2.5rem; "
+                                            style="vertical-align: bottom; margin: 0px; height: 7.5rem; width: 7.5rem; "
                                             src='images\Status0:=StaticBit_Open_Generator:.png' />
                                     </div>
-                                    <div class="card-td-first">
+                                    <div class="card-td-first-stand">
                                         <td align="center">
                                             <form method="post" action="">
-                                                <input type="submit" class="card-btn" value="关闭高压">
+                                                <input type="submit" class="card-btn-stand" value="关闭高压">
                                                 <input type="hidden" name='"HV_Close_Key"' value="1">
                                             </form>
                                         </td>
@@ -207,16 +207,16 @@
                                 </div>
 
                                 <div class="card-tr-l">
-                                    <div class="card-td-first">光闸</div>
+                                    <div class="card-td-first-stand">光闸</div>
                                     <div>
                                         <img class=“card-td-s"
-                                            style="vertical-align: bottom; margin: 0px; height: 2.5rem; width: 2.5rem; "
+                                            style="vertical-align: bottom; margin: 0px; height: 7.5rem; width: 7.5rem; "
                                             src='images\Status0:=StaticBit_Shutter_Tube:.png' />
                                     </div>
-                                    <div class="card-td-first">
+                                    <div class="card-td-first-stand">
                                         <td align="center">
                                             <form method="post" action="">
-                                                <input type="submit" class="card-btn" value="关闭光闸">
+                                                <input type="submit" class="card-btn-stand" value="关闭光闸">
                                                 <input type="hidden" name='"Shutter_OFF_Key"' value="1">
                                             </form>
                                         </td>
@@ -224,123 +224,125 @@
                                 </div>
                             </div>
 
-                            <!-- <div class="card-item">
-                                <div class="card-title blue">冷却循环水装置</div>
-                                <div class="card-tr">
-                                    <div class="card-td-l">
-                                        <div>温度设置</div>
-                                        <div class="unit">℃</div>
-                                    </div>
-                                    <div class="card-td-s">
-                                        <img src="images/add.png">
-                                    </div>
-                                    <div class="card-td-l">20.5</div>
-                                    <div class="card-td-s">
-                                        <img src="images/sub.png">
-                                    </div>
+                            <!-- <div class="card-item-stand">
+                            <div class="card-title-stand blue">冷却循环水装置</div>
+                            <div class="card-tr">
+                                <div class="card-td-l">
+                                    <div>温度设置</div>
+                                    <div class="unit">℃</div>
                                 </div>
-                                <div class="card-tr">
-                                    <div class="card-td-l">
-                                        <div>偏差设置</div>
-                                        <div class="unit">℃</div>
-                                    </div>
-                                    <div class="card-td-s">
-                                        <img src="images/add.png">
-                                    </div>
-                                    <div class="card-td-l">2.0</div>
-                                    <div class="card-td-s">
-                                        <img src="images/sub.png">
-                                    </div>
+                                <div class="card-td-s">
+                                    <img src="images/add.png">
                                 </div>
-                            </div> -->
+                                <div class="card-td-l">20.5</div>
+                                <div class="card-td-s">
+                                    <img src="images/sub.png">
+                                </div>
+                            </div>
+                            <div class="card-tr">
+                                <div class="card-td-l">
+                                    <div>偏差设置</div>
+                                    <div class="unit">℃</div>
+                                </div>
+                                <div class="card-td-s">
+                                    <img src="images/add.png">
+                                </div>
+                                <div class="card-td-l">2.0</div>
+                                <div class="card-td-s">
+                                    <img src="images/sub.png">
+                                </div>
+                            </div>
+                        </div> -->
 
                         </div>
                     </div>
                 </div>
 
 
+                <!--状态浏览-->
                 <div id="stateBrowsingView" class="tabView">
                     <div class="tab-item-border">
                         <div class="tab-item">
-                            <div class="card-item">
-                                <div class="card-title blueTitle">系统状态</div>
+                            <!--系统状态-->
+                            <div class="card-item-stand">
+                                <div class="card-title-stand blueTitle-stand">系统状态</div>
                                 <div class="card-tr">
                                     <div class="card-td-two">
-                                        <div class="card-td-two-title">高压运行</div>
-                                        <img style="vertical-align: bottom; margin: 0px; height: 2.5rem; width: 2.5rem; "
+                                        <div class="card-td-two-title-stand">高压运行</div>
+                                        <img style="vertical-align: bottom; margin: 0px; height: 5rem; width: 5rem; "
                                             src='images\Status0:=StaticBit_Open_Generator:.png' />
                                     </div>
                                     <div class="card-td-two">
-                                        <div class="card-td-two-title">光闸故障</div>
-                                        <img style="vertical-align: bottom; margin: 0px; height: 2.5rem; width: 2.5rem; "
+                                        <div class="card-td-two-title-stand">光闸故障</div>
+                                        <img style="vertical-align: bottom; margin: 0px; height: 5rem; width: 5rem; "
                                             src='images\Status-N01.png' />
                                     </div>
                                 </div>
                                 <div class="card-tr">
                                     <div class="card-td-two">
-                                        <div class="card-td-two-title">急停开关</div>
-                                        <img style="vertical-align: bottom; margin: 0px; height: 2.5rem; width: 2.5rem; "
+                                        <div class="card-td-two-title-stand">急停开关</div>
+                                        <img style="vertical-align: bottom; margin: 0px; height: 5rem; width: 5rem; "
                                             src='images\Status0:=StaticBits_Emegency_Down:.png' />
                                     </div>
                                     <div class="card-td-two">
-                                        <div class="card-td-two-title">门机连锁</div>
-                                        <img style="vertical-align: bottom; margin: 0px; height: 2.5rem; width: 2.5rem; "
+                                        <div class="card-td-two-title-stand">门机连锁</div>
+                                        <img style="vertical-align: bottom; margin: 0px; height: 5rem; width: 5rem; "
                                             src='images\Status0:=StaticBit_Interlock_Generator:.png' />
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="card-item">
-                                <div class="card-title blueTitle">X射线高压发生器</div>
+                                <!-- </div> -->
+                                <!--X射线高压发生器-->
+                                <!-- <div class="card-item-stand"> -->
+                                <div class="card-title-stand blueTitle-stand">X射线高压发生器</div>
                                 <div class="card-tr">
                                     <div class="card-td-two">
-                                        <div class="card-td-two-title">管电压</div>
-                                        <img style="vertical-align: bottom; margin: 0px; height: 2.5rem; width: 6.25rem; "
+                                        <div class="card-td-two-title-stand">管电压</div>
+                                        <img style="vertical-align: bottom; margin: 0px; height: 5rem; width: 12.51rem; "
                                             src='images\xStatus0:=Static_Power_HV_Display:.png' />
                                     </div>
                                     <div class="card-td-two">
-                                        <div class="card-td-two-title">管电流</div>
-                                        <img style="vertical-align: bottom; margin: 0px; height: 2.5rem; width: 6.25rem; "
+                                        <div class="card-td-two-title-stand">管电流</div>
+                                        <img style="vertical-align: bottom; margin: 0px; height: 5rem; width: 12.51rem; "
                                             src='images\xStatus0:=Static_Power_mA_Display:.png' />
                                     </div>
                                 </div>
                                 <div class="card-tr">
                                     <div class="card-td-two">
-                                        <div class="card-td-two-title">球管超温</div>
-                                        <img style="vertical-align: bottom; margin: 0px; height: 2.5rem; width: 2.5rem; "
+                                        <div class="card-td-two-title-stand">球管超温</div>
+                                        <img style="vertical-align: bottom; margin: 0px; height: 5rem; width: 5rem; "
                                             src='images\Status0:=ErrorBits_OverTemp_Tube:.png' />
                                     </div>
                                     <div class="card-td-two">
-                                        <div class="card-td-two-title">输出功率</div>
-                                        <img style="vertical-align: bottom; margin: 0px; height: 2.5rem; width: 2.5rem; "
+                                        <div class="card-td-two-title-stand">输出功率</div>
+                                        <img style="vertical-align: bottom; margin: 0px; height: 5rem; width: 5rem; "
                                             src='images\Status0:=ErrorBits_OverPower_Generator:.png' />
                                     </div>
                                 </div>
-                            </div>
+                                <!-- </div> -->
 
-                            <div class="card-item">
-                                <div class="card-title blueTitle">冷却循环水装置</div>
+                                <!-- <div class="card-item-stand"> -->
+                                <div class="card-title-stand blueTitle-stand">冷却循环水装置</div>
                                 <div class="card-tr">
                                     <div class="card-td-two">
-                                        <div class="card-td-two-title">循环水温度</div>
-                                        <img style="vertical-align: bottom; margin: 0px; height: 2.5rem; width: 6.25rem; "
+                                        <div class="card-td-two-title-stand">循环水温度</div>
+                                        <img style="vertical-align: bottom; margin: 0px; height: 5rem; width: 12.51rem; "
                                             src='images\temStatus0:="Static_WaterTemper_Display":.png' />
                                     </div>
                                     <div class="card-td-two">
-                                        <div class="card-td-two-title">回水流量</div>
-                                        <img style="vertical-align: bottom; margin: 0px; height: 2.5rem; width: 6.25rem; "
+                                        <div class="card-td-two-title-stand">回水流量</div>
+                                        <img style="vertical-align: bottom; margin: 0px; height: 5rem; width: 12.51rem; "
                                             src='images\xStatus0:="Static_WaterFLow_Display":.png' />
                                     </div>
                                 </div>
                                 <div class="card-tr">
                                     <div class="card-td-two">
-                                        <div class="card-td-two-title">出水压力</div>
-                                        <img style="vertical-align: bottom; margin: 0px; height: 2.5rem; width: 6.25rem; "
+                                        <div class="card-td-two-title-stand">出水压力</div>
+                                        <img style="vertical-align: bottom; margin: 0px; height: 5rem; width: 12.51rem; "
                                             src='images\xStatus0:="Static_Water_Pressure_Display":.png' />
                                     </div>
                                     <div class="card-td-two">
-                                        <div class="card-td-two-title">温度传感器</div>
-                                        <img style="vertical-align: bottom; margin: 0px; height: 2.5rem; width: 2.5rem; "
+                                        <div class="card-td-two-title-stand">温度传感器</div>
+                                        <img style="vertical-align: bottom; margin: 0px; height: 5rem; width: 5rem; "
                                             src='images\Status0:=ErrorBits_WaterTemper_Sensor_Tube:.png' />
                                     </div>
                                 </div>
@@ -348,7 +350,6 @@
 
                         </div>
 
-                        <!-- <table width="840px" height="100px" border="0"> -->
                         <table width=100% height=100% border="0">
                             <tr>
                                 <td height="55px">
@@ -356,7 +357,7 @@
                             <tr>
                                 <td align="center">
                                     <form method="post" action="">
-                                        <input type="submit" class="reset-btn" value="系统复位">
+                                        <input type="submit" class="reset-btn-stand" value="系统复位">
                                         <input type="hidden" name='"Alarm_Reset_Key"' value="1">
                                     </form>
                                 </td>
@@ -372,22 +373,22 @@
                 <div id="deviceParametersView" class="tabView">
                     <div class="tab-item-border">
                         <div class="tab-item">
-                            <div class="card-item">
-                                <div class="card-title blueTitle">X射线高压发生器</div>
+                            <div class="card-item-stand">
+                                <div class="card-title-stand blueTitle-stand">X射线高压发生器</div>
                                 <div class="card-tr">
-                                    <div class="card-td-first">电压上限</div>
-                                    <div class="card-td-second" id="upperVoltageLimit">:=Tube_KV_Limit_SET:</div>
-                                    <div class="card-td-third">KV</div>
+                                    <div class="card-td-first-stand">电压上限</div>
+                                    <div class="card-td-second-stand" id="upperVoltageLimit">:=Tube_KV_Limit_SET:</div>
+                                    <div class="card-td-third-stand">KV</div>
                                 </div>
                                 <div class="card-tr">
-                                    <div class="card-td-first">电流上限</div>
-                                    <div class="card-td-second" id="upperCurrentLimit">:=Tube_mA_Limit_SET:</div>
-                                    <div class="card-td-third">mA</div>
+                                    <div class="card-td-first-stand">电流上限</div>
+                                    <div class="card-td-second-stand" id="upperCurrentLimit">:=Tube_mA_Limit_SET:</div>
+                                    <div class="card-td-third-stand">mA</div>
                                 </div>
                                 <div class="card-tr">
-                                    <div class="card-td-first">功率上限</div>
-                                    <div class="card-td-second" id="upperPowerLimit">:=Tube_Power_Limit_SET:</div>
-                                    <div class="card-td-third">W</div>
+                                    <div class="card-td-first-stand">功率上限</div>
+                                    <div class="card-td-second-stand" id="upperPowerLimit">:=Tube_Power_Limit_SET:</div>
+                                    <div class="card-td-third-stand">W</div>
                                 </div>
                             </div>
                         </div>
@@ -395,7 +396,7 @@
                 </div>
 
             </div>
-            <div class="footer">
+            <div class="footer-stand">
                 丹东通达科技有限公司
             </div>
         </div>
@@ -405,7 +406,7 @@
         //切换tab方法
         function changeTab(id) {
             //选项卡样式切换
-            var tabBtn = document.getElementsByClassName('tab');
+            var tabBtn = document.getElementsByClassName('tab-stand');
             for (var j = 0; j < tabBtn.length; j++) {
                 tabBtn[j].classList.remove('active');
             }
